@@ -27,5 +27,6 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y sfst
 
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y git
 
+RUN apt-get install -y bash-completion
 
-CMD sh
+CMD /bin/bash

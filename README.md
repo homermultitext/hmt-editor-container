@@ -5,7 +5,7 @@ A docker container for HMT editing.
 
 ## What it does
 
-When you run this docker container, you are put in a bash shell (`sh`) in a Linux environment that includes:
+When you run this docker container, you are put in a bash shell in a Linux environment that includes:
 
 - `git` for version control
 - `sbt`, the simple build tool (used to run HMT validation scripts)
@@ -32,11 +32,11 @@ To resume work in a stopped container, first restart the container:
 
     docker restart hmt
 
-then run a bash sh (`sh`)  in the restarted container:
+then run a bash sh (`/bin/bash`)  in the restarted container:
 
-    docker exec -ti hmt sh
+    docker exec -ti hmt /bin/bash
 
 
 ## Editing in a HMT editor's environment
 
-See the separate documentation (LINK TBA)
+See the separate documentation (LINK TBA).
