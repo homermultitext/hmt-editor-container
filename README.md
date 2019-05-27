@@ -24,7 +24,7 @@ That's it!  The rest of the software you need is available from within the docke
 
 Start the container:
 
-    docker run -ti --name hmt -v $(pwd):/workspace hmteditor
+    docker run -ti --name hmt -v $(pwd):/workspace neelsmith/hmteditor
 
 When you're done working, from the bash shell, just `exit`.
 
