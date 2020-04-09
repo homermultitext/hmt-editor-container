@@ -7,14 +7,14 @@ Try configuring HMT editing functionality under alpine Linux.
 From within the `docker` directory,
 
 1. `source envvars.sh` (or otherwise set environment variable `MYNAME`)
-2. `docker build -t $MYNAME/spark:latest .`
+2. `docker build -t $IMAGE_NAME:latest .`
 
 
 
 ## Use
 
 
-    docker run --rm -it -v $(pwd):/work   $MYNAME/spark:latest /bin/bash
+    docker run --rm -it -v $(pwd):/work $IMAGE_NAME:latest /bin/bash
 
 
 ## Notes

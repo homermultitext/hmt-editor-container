@@ -6,7 +6,7 @@ ENV SCALA_VERSION ${SCALA_VERSION:-2.12.4}
 ENV SBT_VERSION ${SBT_VERSION:-1.2.8}
 ENV SFST_VERSION ${SFST_VERSION:-1.4.7e}
 
-RUN apk --update add wget tar bash make g++ readline-dev ncurses-dev
+RUN apk --update add wget tar bash make g++ readline-dev ncurses-dev git git-bash-completion
 
 
 RUN \
@@ -27,5 +27,5 @@ RUN \
   sbt sbt-version || sbt sbtVersion || true
 
 RUN \
- curl -fsL https://www.cis.uni-muenchen.de/~schmid/tools/SFST/data/SFST-${SFST_VERSION}.tar.gz | tar xfz - -C /usr/local && \
- cd SFST/src && make && make install
+ curl -fsL https://www.cis.uni-muenchen.de/~schmid/tools/SFST/data/SFST-${SFST_VERSION}.tar.gz | tar xfz - && \
+ cd SFST/src && make && make install && which fsft-infl

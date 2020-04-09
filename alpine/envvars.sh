@@ -1,2 +1,2 @@
-export MYNAME=hmt-alp
-export SFSTVERSION=1.4.7e
+export IMAGE_NAME=hmt-alp
+export SFST_VERSION=1.4.7e
