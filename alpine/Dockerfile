@@ -28,4 +28,4 @@ RUN \
 
 RUN \
  curl -fsL https://www.cis.uni-muenchen.de/~schmid/tools/SFST/data/SFST-${SFST_VERSION}.tar.gz | tar xfz - && \
- cd SFST/src && make && make install &&  echo Installed fst-info in `which fst-infl`
+ cd SFST/src && make && make install &&  echo Installed fst-infl in `which fst-infl`
