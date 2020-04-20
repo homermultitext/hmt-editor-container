@@ -29,3 +29,8 @@ RUN \
 RUN \
  curl -fsL https://www.cis.uni-muenchen.de/~schmid/tools/SFST/data/SFST-${SFST_VERSION}.tar.gz | tar xfz - && \
  cd SFST/src && make && make install && echo Installed fst-infl in `which fst-infl`
+
+RUN apk add ncurses
+
+RUN \
+ sh -c '(echo "#!/usr/bin/env sh" && curl -L https://github.com/lihaoyi/Ammonite/releases/download/2.0.4/2.13-2.0.4) > /usr/local/bin/amm && chmod +x /usr/local/bin/amm'
