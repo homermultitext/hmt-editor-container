@@ -2,8 +2,7 @@
 
 A docker container for HMT editing.
 
-
-## Current version: 1.0.0
+## Latest version: 1.0.0
 
 
 ## What it does
