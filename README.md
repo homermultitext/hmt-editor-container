@@ -32,3 +32,8 @@ You can save yourself some typing by using the one-line shell script included in
 If you prefer, you can specify the full docker command:
 
     docker run -ti --rm -v $(pwd):/work neelsmith/hmteditor:latest
+
+
+## Source
+
+The `ubuntu` directory has the docker build file for a container that was used in the summer of 2019.  The current image is built from the sources in the `alpine` directory.
