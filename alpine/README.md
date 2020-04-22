@@ -19,5 +19,5 @@ From within the `docker` directory,
 
 ### Publish a tested version
 
-    docker login // you if haven't already
+    docker login # you if haven't already
     ./publish.sh
