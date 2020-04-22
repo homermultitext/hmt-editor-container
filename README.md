@@ -1,6 +1,5 @@
-# `hmt-editor-container`
+# A docker container for HMT editing
 
-A docker container for HMT editing.
 
 
 ## TL;DR
