@@ -13,12 +13,11 @@ From within the `docker` directory,
 
     docker build -t ${IMAGE_NAME}:latest .
 
+### Use or test a locally built image
+
+    run.sh
+
 ### Publish a tested version
 
     docker login // you if haven't already
     ./publish.sh
-
-
-## Use or test locally built image
-
-`run.sh` will start a `bash` shell in the container.
