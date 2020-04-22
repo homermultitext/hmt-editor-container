@@ -2,21 +2,33 @@ Try configuring HMT editing functionality under alpine Linux.
 
 
 
-## Build
+## Build and publish
+
+
 
 From within the `docker` directory,
 
-1. `source envvars.sh` (or otherwise set environment variable `MYNAME`)
-2. `docker build -t $IMAGE_NAME:latest .`
+    source envvars.sh
+
+### Build
+
+    docker build -t ${IMAGE_NAME}:latest .
+
+### Publish a tested version
+
+    docker login // if haven't already
+    docker push ${IMAGE_NAME}:latest
+
+    docker tag ${IMAGE_NAME}:latest registry:${MAJOR_VERSION}
+    docker push ${IMAGE_NAME}:${MAJOR_VERSION}
+
+    docker tag ${IMAGE_NAME}:latest ${IMAGE_NAME}:$MAJOR_VERSION.$MINOR_VERSION
+    docker push ${IMAGE_NAME}:$MAJOR_VERSION.$MINOR_VERSION
+
+    docker tag ${IMAGE_NAME}:latest ${IMAGE_NAME}:$MAJOR_VERSION.$MINOR_VERSION.$PATCH_VERSION
+    docker push ${IMAGE_NAME}:$MAJOR_VERSION.$MINOR_VERSION.$PATCH_VERSION
 
 
+## Use or test locally built image
 
-## Use
-
-
-    docker run --rm -it -v $(pwd):/work $IMAGE_NAME:latest /bin/bash
-
-
-## Notes
-
-https://www.cis.uni-muenchen.de/~schmid/tools/SFST/data/SFST-${SFST_VERSION}.tar.gz
+`run.sh` will start a `bash` shell in the container.
