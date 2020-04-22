@@ -6,11 +6,15 @@
 
 If you have docker installed, run this shell script:
 
-    run-hmt.sh
+```sh
+./run-hmt.sh
+```
 
 or else run
 
-    docker run -ti --rm -v $(pwd):/work neelsmith/hmteditor:latest
+```sh
+docker run -ti --rm -v $(pwd):/work neelsmith/hmteditor:latest
+```
 
 
 to start a container with all the tools you need for editing HMT project material.        
@@ -41,11 +45,15 @@ That's it!  The rest of the software you need is available from within the docke
 
 You can save yourself some typing by using the one-line shell script included in this repository
 
-    run-hmt.sh
+```sh
+./run-hmt.sh
+```
 
 If you prefer, you can specify the full docker command:
 
-    docker run -ti --rm -v $(pwd):/work neelsmith/hmteditor:latest
+```sh
+docker run -ti --rm -v $(pwd):/work neelsmith/hmteditor:latest
+```
 
 
 ## Source
