@@ -6,7 +6,7 @@
 
 If you have docker installed, run this shell script:
 
-        run-hmt.sh
+    run-hmt.sh
 
 or else run
 
