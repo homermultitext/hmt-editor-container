@@ -4,6 +4,7 @@ A docker container for HMT editing.
 
 ## Latest version: 1.0.0
 
+Images are tagged with versions according to semantic versioning. See [this blog post](https://medium.com/@mccode/using-semantic-versioning-for-docker-image-tags-dfde8be06699).
 
 ## What it does
 
