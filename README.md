@@ -4,9 +4,14 @@
 
 ## TL;DR
 
-If you have docker installed, run
+If you have docker installed, run this shell script:
 
         run-hmt.sh
+
+or else run
+
+    docker run -ti --rm -v $(pwd):/work neelsmith/hmteditor:latest
+
 
 to start a container with all the tools you need for editing HMT project material.        
 
