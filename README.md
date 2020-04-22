@@ -2,6 +2,15 @@
 
 A docker container for HMT editing.
 
+
+## TL;DR
+
+If you have docker installed, run
+
+        run-hmt.sh
+
+to start a container with all the tools you need for editing HMT project material.        
+
 ## Latest version: 1.0.0
 
 Images are tagged with versions according to semantic versioning. See [this blog post](https://medium.com/@mccode/using-semantic-versioning-for-docker-image-tags-dfde8be06699).
