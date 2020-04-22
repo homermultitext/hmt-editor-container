@@ -1,4 +1,3 @@
-Try configuring HMT editing functionality under alpine Linux.
 
 
 
@@ -16,17 +15,8 @@ From within the `docker` directory,
 
 ### Publish a tested version
 
-    docker login // if haven't already
-    docker push ${IMAGE_NAME}:latest
-
-    docker tag ${IMAGE_NAME}:latest registry:${MAJOR_VERSION}
-    docker push ${IMAGE_NAME}:${MAJOR_VERSION}
-
-    docker tag ${IMAGE_NAME}:latest ${IMAGE_NAME}:$MAJOR_VERSION.$MINOR_VERSION
-    docker push ${IMAGE_NAME}:$MAJOR_VERSION.$MINOR_VERSION
-
-    docker tag ${IMAGE_NAME}:latest ${IMAGE_NAME}:$MAJOR_VERSION.$MINOR_VERSION.$PATCH_VERSION
-    docker push ${IMAGE_NAME}:$MAJOR_VERSION.$MINOR_VERSION.$PATCH_VERSION
+    docker login // you if haven't already
+    ./publish.sh
 
 
 ## Use or test locally built image
