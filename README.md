@@ -52,7 +52,7 @@ You can save yourself some typing by using the one-line shell script included in
 If you prefer, you can specify the full docker command:
 
 ```sh
-docker run -ti --rm -v $(pwd):/work neelsmith/hmteditor:latest
+docker run -ti --rm -v $(pwd):/work neelsmith/hmteditor:1.0.0
 ```
 
 
